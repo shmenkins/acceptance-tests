@@ -1,0 +1,15 @@
+version: 0.2
+
+env:
+  parameter-store:
+    SHMENKINS_API_URL: "shmenkins_api_url"
+
+phases:
+  install:
+    commands:
+      - echo Entered the install phase...
+      - pipenv --version
+  build:
+    commands:
+      - echo Entered the build phase...
+      - echo Build started on `date`
