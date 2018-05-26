@@ -8,6 +8,9 @@ phases:
   install:
     commands:
       - make init
+  pre_build:
+    commands:
+      - make config
   build:
     commands:
       - make test
