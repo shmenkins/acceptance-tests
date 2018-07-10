@@ -7,8 +7,8 @@ cfg.read("config.ini")
 _api_url = str(cfg["default"]["api_url"])
 
 
-def test_post_scm_trigger():
-    response = requests.post(f"{_api_url}/scm-triggers", json={"url": "abc"})
+def test_post_scm_repo():
+    response = requests.post(f"{_api_url}/scm-repos", json={"url": "abc"})
 
     assert response.status_code == 201
 
